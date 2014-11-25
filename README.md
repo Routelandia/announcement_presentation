@@ -42,7 +42,7 @@ To do local development:
 
    You can change the port by using `grunt serve --port 8001`.
 
-9. To edit the presentation edit the index.html file, all presentation content is in that file.
+9. To edit the presentation edit the index.html file, all presentation is stored there.
 
 
 
