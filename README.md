@@ -9,9 +9,6 @@ This presentation is our end-of-first-quarter project description and announceme
 
 reveal.js is utilizated to create this presentation. More informaton on reveal.js can be found at the [project website](https://github.com/hakimel/reveal.js/), which describes how to use reveal.js and such.
 
-
-# How to view/edit/develop:
-
 To do local development:
 
 1. Install [Node.js](http://nodejs.org/)
