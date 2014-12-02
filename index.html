@@ -122,9 +122,25 @@
             <h2>Architecture</h2>
 
             <ul>
-              <li class="fragment">Client's DB</li>
-              <li class="fragment">REST API</li>
-              <li class="fragment">Client Applications</li>
+              <li class="fragment">Sponsor's DB
+                <ul>
+                  <li class="fragment">Postgres with PostGIS plugin</li>
+                  <li class="fragment">Read only from our perspective</li>
+                </ul>
+              </li>
+              <li class="fragment">Application Server
+                <ul>
+                  <li class="fragment">PHP based REST API</li>
+                  <li class="fragment">&nbsp;&nbsp;(Restler framework chosen)</li>
+                  <li class="fragment">May or may not have it's own database for user created data</li>
+                </ul>
+              </li>
+              <li class="fragment">Client Applications
+                <ul>
+                  <li class="fragment">Consume REST API</li>
+                  <li class="fragment">Draw data from API onto map provided by google</li>
+                </ul>
+              </li>
             </ul>
           </section>
 
@@ -143,7 +159,7 @@
             <li class="fragment">Wanted to do route calculation
                 <div class="fragment">quickly discovered even in concept it would be difficult</div>
             </li>
-            <li class="fragment">Many team members not experienced with web dev</li>
+            <li class="fragment">Most team members not experienced with web dev</li>
 
             <aside class="notes">
               <ul>
