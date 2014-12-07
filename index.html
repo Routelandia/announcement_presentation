@@ -88,10 +88,12 @@
           <h2>So what are we going to build?</h2>
 
           <ul>
-            <li class="fragment">Route prediction based on highway ODOT data</li>
+            <li class="fragment">Travel time prediction based on highway ODOT data</li>
             <li class="fragment">Select a highway and app will tell you when to leave</li>
-            <li class="fragment">PH</li>
-            <li class="fragment">PH</li>
+                <ul>
+                  <li class="fragment">Select highway in segments that you plan to travel on</li>
+                  <li class="fragment">Cant predict off highway (Initally)</li>
+                </ul>
           </ul>
 
           <aside class="notes">
@@ -142,6 +144,12 @@
                 </ul>
               </li>
             </ul>
+          <aside class="notes">
+            <ul>
+              <li>Client sends time frame app server calculates traffic stats over that based on ODOT history</li>
+              <li>Client has segments between on/off ramps</li>
+            </ul>
+          </aside>
           </section>
 
           <section data-transition="concave">
@@ -161,7 +169,10 @@
 
           <ul>
             <li class="fragment">Wanted to do route calculation
-                <div class="fragment">quickly discovered even in concept it would be difficult</div>
+                <ul>
+                  <li class="fragment">Quickly discovered even in concept it would be difficult</li>
+                  <li class="fragment">Decided to avoid doing any route calculation</li>
+                </ul>
             </li>
             <li class="fragment">Most team members not experienced with web dev</li>
             <li class="fragment">What happens if our whole back-end team fails CS350?</li>
@@ -184,8 +195,10 @@
 
           <aside class="notes">
             <ul>
-              <li>Error reporting: As you drive, inform if route is taking longer than average/predicted?
+              <li>Error reporting: As you drive, inform if route is taking longer than average/predicted? | Ask user if it took longer, and report back -PG</li>
               <li>TODO: Gathering what data from user's phone?</li>
+              <li>Time it takes to go between bluetooth arterials</li>
+              <li>GPS Data to verify calculations were accurate</li>
             </ul>
           </aside>
         </section>
