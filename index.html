@@ -34,6 +34,14 @@
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
+
+    <style type="text/css">
+    html.img-left div.slide-background.present {
+        background-position: left;
+        margin-left:10px;
+    }
+
+    </style>
   </head>
 
   <body>
@@ -145,10 +153,10 @@
           </section>
         </section>
 
-        <section data-transition="concave" data-background="img/architecture_diagram.png" data-background-size="35%" data-background-transition="slide">
+        <section data-transition="concave" data-state="img-left" data-background="img/architecture_diagram.png" data-background-transition="slide" data-background-size="30%">
           <section>
             <h2>Architecture</h2>
-            <ul>
+            <ul style="margin-left:30%">
               <li class="fragment">Sponsor's DB
                 <ul>
                   <li class="fragment">Postgres with PostGIS plugin</li>
